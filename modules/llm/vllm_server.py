@@ -36,7 +36,7 @@ async def generate_response(request: InferenceRequest):
         return {"error": "No text prompts provided!"}
     sampling_params = SamplingParams(
         temperature=0.2,
-        max_tokens=2048,
+        max_tokens=4096,
         top_p=1.0,
         top_k=-1,
         frequency_penalty=0.0,
@@ -85,7 +85,7 @@ def main():
         dtype="bfloat16" if torch.cuda.is_bf16_supported() else "float16",
         trust_remote_code=True,
         max_model_len=8192,  # Cap context length to fit in available KV cache memory
-        gpu_memory_utilization=0.90,  # Use more GPU memory for KV cache
+        gpu_memory_utilization=0.9,  # Use more GPU memory for KV cache
     )
 
     uvicorn.run(app, host=args.host, port=args.port)

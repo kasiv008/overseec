@@ -3,9 +3,9 @@ from typing import TYPE_CHECKING
 import torch
 from transformers import CLIPSegProcessor, CLIPSegForImageSegmentation
 
-from overseec.modules.semseg.model_base import Model_Base
+from modules.semseg.model_base import Model_Base
 if TYPE_CHECKING:
-    from overseec.modules.semseg.semseg_config import SemSegConfig, CLIPSegConfig
+    from modules.semseg.semseg_config import SemSegConfig, CLIPSegConfig
 
 
 class CLIPSeg(Model_Base):

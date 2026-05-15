@@ -2,8 +2,8 @@ from dataclasses import dataclass, field
 
 from torchvision.transforms import ToTensor, Normalize, Compose
 
-from overseec.modules.semseg.semseg_config import *
-from overseec.modules.mask_refiner.mask_refiner_config import *
+from modules.semseg.semseg_config import *
+from modules.mask_refiner.mask_refiner_config import *
 
 
 

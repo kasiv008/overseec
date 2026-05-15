@@ -7,7 +7,7 @@
 import numpy as np
 import torch
 
-from overseec.modules.mask_refiner.SAMRefiner.samrefiner_sam.samrefiner_sam.modeling import Sam
+from modules.mask_refiner.SAMRefiner.samrefiner_sam.samrefiner_sam.modeling import Sam
 
 from typing import Optional, Tuple
 

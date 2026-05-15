@@ -10,9 +10,9 @@ import torch.optim as optim
 import torch.nn.functional as F
 import pytorch_lightning as pl
 
-from overseec.modules.utils import * 
+from modules.utils import * 
 if TYPE_CHECKING:
-    from overseec.modules.semseg.semseg_config import SemSegConfig, ModelConfig
+    from modules.semseg.semseg_config import SemSegConfig, ModelConfig
 
 class OVerSeeC_Semseg(pl.LightningModule):
     def __init__(self, 

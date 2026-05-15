@@ -10,9 +10,9 @@ import torch.nn as nn
 import torch.nn.functional as F
 from torch.utils.data import Dataset, DataLoader
 
-from overseec.modules.semseg import *
-from overseec.modules.mask_refiner import *
-from overseec.overseec_config import AllConfig
+from modules.semseg import *
+from modules.mask_refiner import *
+from overseec_config import AllConfig
 
 
 

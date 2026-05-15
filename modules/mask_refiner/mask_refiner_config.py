@@ -1,5 +1,5 @@
 import os
-import overseec
+# import overseec
 from dataclasses import dataclass
 import numpy as np
 
@@ -42,8 +42,8 @@ class SAM_Exemplar_Config(Mask_RefinerConfig):
 
     def __post_init__(self,):
 
-        module_dir =  os.path.dirname(os.path.abspath(overseec.__file__))
-        self.ckpt_path = f"{module_dir}/checkpoints/{self.ckpt_fname}"
+        module_dir =  "/home/usl/Desktop/overseec"#os.path.dirname(os.path.abspath(overseec.__file__))
+        self.ckpt_path = module_dir+"/checkpoints/{self.ckpt_fname}"
 
 @dataclass
 class SAMRefiner_Config(Mask_RefinerConfig):
@@ -70,5 +70,5 @@ class SAMRefiner_Config(Mask_RefinerConfig):
             self.ckpt_fname : str = "sam_vit_b_01ec64.pth"
             self.model_type : str = "vit_b"
 
-        module_dir =  os.path.dirname(os.path.abspath(overseec.__file__))
-        self.ckpt_path = f"{module_dir}/checkpoints/{self.ckpt_fname}"
+        module_dir =  "/home/usl/Desktop/overseec"#os.path.dirname(os.path.abspath(overseec.__file__))
+        self.ckpt_path = module_dir+"/checkpoints/{self.ckpt_fname}"

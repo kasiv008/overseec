@@ -1,7 +1,7 @@
 import torch.nn as nn
 from typing import TYPE_CHECKING
 if TYPE_CHECKING:
-    from overseec.semseg_config import SemSegConfig, ModelConfig
+    from modules.semseg.semseg_config import SemSegConfig, ModelConfig
 
 class Model_Base(nn.Module):
     def __init__(self, 

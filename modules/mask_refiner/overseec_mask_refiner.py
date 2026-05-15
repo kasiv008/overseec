@@ -6,10 +6,10 @@ import torch.nn as nn
 import torch.optim as optim
 import torch.nn.functional as F
 from typing import TYPE_CHECKING
-from overseec.modules.utils import * 
+from modules.utils import * 
 import pytorch_lightning as pl
 if TYPE_CHECKING:
-    from overseec.semseg_config import SemSegConfig, Mask_RefinerConfig
+    from semseg_config import SemSegConfig, Mask_RefinerConfig
 
 
 class OVerSeeC_Mask_Refiner():

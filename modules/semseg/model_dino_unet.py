@@ -5,9 +5,9 @@ import torch.nn as nn
 import torch.hub
 import torch.nn.functional as F
 
-from overseec.modules.semseg.model_base import Model_Base
+from modules.semseg.model_base import Model_Base
 if TYPE_CHECKING:
-    from overseec.modules.semseg.semseg_config import SemSegConfig, DinoUNetConfig
+    from modules.semseg.semseg_config import SemSegConfig, DinoUNetConfig
 
 
 class DinoUNet(Model_Base):

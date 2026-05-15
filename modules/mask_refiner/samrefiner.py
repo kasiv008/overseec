@@ -2,15 +2,15 @@ import numpy as np
 import torch
 
 # from segment_anything import sam_model_registry, SamPredictor
-from overseec.modules.mask_refiner.SAMRefiner.sam_refiner import sam_refiner_image_embedding
-from overseec.modules.mask_refiner.SAMRefiner.samrefiner_sam.samrefiner_sam.utils.transforms import ResizeLongestSide
-from overseec.modules.mask_refiner.SAMRefiner.samrefiner_sam.samrefiner_sam import sam_model_registry as samrefiner_model_registry
-from overseec.modules.mask_refiner.SAMRefiner.utils import prepare_image
+from modules.mask_refiner.SAMRefiner.sam_refiner import sam_refiner_image_embedding
+from modules.mask_refiner.SAMRefiner.samrefiner_sam.samrefiner_sam.utils.transforms import ResizeLongestSide
+from modules.mask_refiner.SAMRefiner.samrefiner_sam.samrefiner_sam import sam_model_registry as samrefiner_model_registry
+from modules.mask_refiner.SAMRefiner.utils import prepare_image
 
 import torch.nn as nn
 from typing import TYPE_CHECKING
 if TYPE_CHECKING:
-    from overseec.semseg_config import SAM_Exemplar_Config, SemSegConfig
+    from modules.semseg.semseg_config import SAM_Exemplar_Config, SemSegConfig
     
 
 

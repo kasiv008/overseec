@@ -4,8 +4,8 @@ import os
 from collections import defaultdict
 import cv2
 from tqdm import tqdm
-from overseec.modules.mask_refiner.SAMRefiner.samrefiner_sam.samrefiner_sam.utils.transforms import ResizeLongestSide
-from overseec.modules.mask_refiner.SAMRefiner.utils import prepare_image, extract_bboxes_expand, extract_points, extract_mask
+from modules.mask_refiner.SAMRefiner.samrefiner_sam.samrefiner_sam.utils.transforms import ResizeLongestSide
+from modules.mask_refiner.SAMRefiner.utils import prepare_image, extract_bboxes_expand, extract_points, extract_mask
 
 
 def sam_input_prepare(image, pred_masks, image_embeddings=None, resize_transform=None, use_point=True, use_box=True, use_mask=True, add_neg=True, margin=0.0, gamma=1.0, strength=15):

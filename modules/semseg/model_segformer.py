@@ -2,9 +2,9 @@ from typing import TYPE_CHECKING
 
 from transformers import SegformerForSemanticSegmentation
 
-from overseec.modules.semseg.model_base import Model_Base
+from modules.semseg.model_base import Model_Base
 if TYPE_CHECKING:
-    from overseec.modules.semseg.semseg_config import SemSegConfig, SegFormerConfig
+    from modules.semseg.semseg_config import SemSegConfig, SegFormerConfig
 
 class SegFormer(Model_Base):
     semseg_config: "SemSegConfig" = None

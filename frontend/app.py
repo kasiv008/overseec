@@ -29,6 +29,7 @@ from multiprocessing import Queue
 import importlib.util
 import matplotlib.pyplot as plt
 import cv2
+sys.path.append("/home/usl/Desktop/overseec")
 
 IMAGE_EDIT_TEST_MODE = os.environ.get("OVERSEEC_IMAGE_EDIT_TEST_MODE", "").strip().lower() in {"1", "true", "yes", "on"}
 
@@ -77,9 +78,9 @@ except ImportError:
     HAS_PYNVML = False
 
 try:
-    from overseec.overseec_config import AllConfig
-    from overseec.modules.llm.vllm_client import overseec_query_llm
-    from overseec.OVerSeeC import OVerSeeC
+    from overseec_config import AllConfig
+    from modules.llm.vllm_client import overseec_query_llm
+    from OVerSeeC import OVerSeeC
     HAS_PIPELINE_DEPS = True
 except Exception as e:
     AllConfig = None
