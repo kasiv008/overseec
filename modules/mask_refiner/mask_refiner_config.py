@@ -43,7 +43,7 @@ class SAM_Exemplar_Config(Mask_RefinerConfig):
     def __post_init__(self,):
 
         module_dir =  "/home/usl/Desktop/overseec"#os.path.dirname(os.path.abspath(overseec.__file__))
-        self.ckpt_path = module_dir+"/checkpoints/{self.ckpt_fname}"
+        self.ckpt_path = module_dir+"/checkpoints/" + self.ckpt_fname
 
 @dataclass
 class SAMRefiner_Config(Mask_RefinerConfig):
@@ -71,4 +71,4 @@ class SAMRefiner_Config(Mask_RefinerConfig):
             self.model_type : str = "vit_b"
 
         module_dir =  "/home/usl/Desktop/overseec"#os.path.dirname(os.path.abspath(overseec.__file__))
-        self.ckpt_path = module_dir+"/checkpoints/{self.ckpt_fname}"
+        self.ckpt_path = module_dir+"/checkpoints/" + self.ckpt_fname
